@@ -15,6 +15,7 @@
 		4138C05F27C418A000A33680 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4138C05E27C418A000A33680 /* CoreDataManager.swift */; };
 		4142D92027C41985009B2BD0 /* NoteListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4142D91F27C41985009B2BD0 /* NoteListScreen.swift */; };
 		4142D92227C419B3009B2BD0 /* Task+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4142D92127C419B3009B2BD0 /* Task+Extensions.swift */; };
+		4142D92727C42B3A009B2BD0 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4142D92627C42B3A009B2BD0 /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,9 @@
 		4138C05E27C418A000A33680 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		4142D91F27C41985009B2BD0 /* NoteListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListScreen.swift; sourceTree = "<group>"; };
 		4142D92127C419B3009B2BD0 /* Task+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+Extensions.swift"; sourceTree = "<group>"; };
+		4142D92327C42B06009B2BD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4142D92427C42B1C009B2BD0 /* LearnCloudKit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LearnCloudKit.entitlements; sourceTree = "<group>"; };
+		4142D92627C42B3A009B2BD0 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4142D92727C42B3A009B2BD0 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +50,7 @@
 			children = (
 				4138C04727C4185F00A33680 /* LearnCloudKit */,
 				4138C04627C4185F00A33680 /* Products */,
+				4142D92527C42B3A009B2BD0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,6 +65,8 @@
 		4138C04727C4185F00A33680 /* LearnCloudKit */ = {
 			isa = PBXGroup;
 			children = (
+				4142D92427C42B1C009B2BD0 /* LearnCloudKit.entitlements */,
+				4142D92327C42B06009B2BD0 /* Info.plist */,
 				4138C05D27C4188800A33680 /* Managers */,
 				4138C05C27C4188300A33680 /* Models */,
 				4138C05B27C4187D00A33680 /* Views */,
@@ -101,6 +109,14 @@
 				4138C05E27C418A000A33680 /* CoreDataManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		4142D92527C42B3A009B2BD0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4142D92627C42B3A009B2BD0 /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,12 +322,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LearnCloudKit/LearnCloudKit.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LearnCloudKit/Preview Content\"";
 				DEVELOPMENT_TEAM = 947MDTH7AR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LearnCloudKit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -335,12 +353,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LearnCloudKit/LearnCloudKit.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LearnCloudKit/Preview Content\"";
 				DEVELOPMENT_TEAM = 947MDTH7AR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LearnCloudKit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
