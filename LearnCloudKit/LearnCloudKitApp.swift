@@ -6,15 +6,15 @@
 //
 
 import SwiftUI
+import CloudKit
 
 @main
 struct LearnCloudKitApp: App {
-    let persistenceController = PersistenceController.shared
+    let coreDM = CoreDataManager.shared
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            ContentView().environment(\.managedObjectContext, coreDM.viewContext)
         }
     }
 }
